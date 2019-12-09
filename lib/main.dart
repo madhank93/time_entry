@@ -4,16 +4,8 @@ import 'package:intl/intl.dart';
 import 'dart:convert';
 import "dart:io";
 
-
-
 void main() async {
-
-  // Loading config file
-  final file = new File('lib/config.json');
-  String content = file.readAsStringSync(encoding: Encoding.getByName("utf8"));
-  Map<String,dynamic> config = json.decode(content);
-
-
+  
   // Login
   var loginURL = 'https://hrvine.sysvine.com/index.php/index/loginpopupsave/?username=SYS1310&password=san@2018';
   await Requests.get(loginURL);

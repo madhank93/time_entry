@@ -10,7 +10,7 @@
 .svn/
 
 # Confi file
-.lib/config.json
+/config.json
 
 # IntelliJ related
 *.iml
