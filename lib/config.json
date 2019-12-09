@@ -1,0 +1,7 @@
+{
+  "login_URL": "https://hrvine.sysvine.com/index.php/index/loginpopupsave/",
+  "two_factor_secret_key": "6EMLBKVQMDBJDAX3",
+  "OTP_URL": "https://hrvine.sysvine.com/index.php/index/",
+  "user_id": "lzpZSd",
+  "timesheet_URL": "https://hrvine.sysvine.com/index.php/timemanagement/attendance/getemployeeattendance/format/json/"
+}
