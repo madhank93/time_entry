@@ -47,7 +47,6 @@ void main() async {
     print(
         "You have worked more than 8 hours => ${totalHours.toString().split(' ')[1]}");
   } else {
-    var shortageHours = requiredHours.difference(totalHours);
-    print("You need to clock  $shortageHours");
+    print("You need to clock  ${requiredHours.difference(totalHours)}");
   }
 }
