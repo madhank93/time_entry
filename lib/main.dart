@@ -42,13 +42,10 @@ void main() async {
     }
     totalHours = (totalHours.add(outTime.difference(inTime)));
   }
-
-  print(totalHours);
-  print(totalHours.hour);
-
   // Checking required work hours
   if (totalHours.hour >= 8) {
-    print("You have worked more than 8 hours => ${totalHours.toString().split(' ')[1]}");
+    print(
+        "You have worked more than 8 hours => ${totalHours.toString().split(' ')[1]}");
   } else {
     var shortageHours = requiredHours.difference(totalHours);
     print("You need to clock  $shortageHours");
