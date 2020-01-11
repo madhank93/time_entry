@@ -45,6 +45,7 @@ class MyAppState extends State<MyApp> {
     dynamic json = timesheet.json();
     var totalHours = DateTime.parse("2019-12-06 00:00:00");
     var requiredHours = DateTime.parse("2019-12-06 08:00:00");
+    var currentTime = DateTime.parse(DateTime.now().toString());
 
     // Looping every punch in/out and calculating total worked hours
     for (var time in json) {
@@ -63,7 +64,7 @@ class MyAppState extends State<MyApp> {
         time =
             ("You have worked more than 8 hours => ${totalHours.toString().split(' ')[1]}");
       } else {
-        time = ("You need to clock  ${requiredHours.difference(totalHours)}, ends on ${DateTime.now()+requiredHours.difference(totalHours)} ");
+        time = ("You need to clock  ${requiredHours.difference(totalHours)}, ends on ${currentTime.add(requiredHours.difference(totalHours))} ");
       }
     });
   }
