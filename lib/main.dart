@@ -64,7 +64,7 @@ class MyAppState extends State<MyApp> {
         time =
             ("You have worked more than 8 hours => ${totalHours.toString().split(' ')[1]}");
       } else {
-        time = ("You need to clock  ${requiredHours.difference(totalHours)}, ends on ${currentTime.add(requiredHours.difference(totalHours))} ");
+        time = ("You need to clock  ${requiredHours.difference(totalHours)}, ends on ${(currentTime.add(requiredHours.difference(totalHours))).toString().split(' ')[1]} ");
       }
     });
   }
